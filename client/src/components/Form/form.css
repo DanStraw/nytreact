@@ -1,0 +1,21 @@
+.search-input {
+    width: 40vw;
+    margin: 10px;
+    position: relative;
+    left: 1vw;
+}
+.input-div {
+    position: relative;
+    left: 5vw;
+}
+
+label {
+    width: 8vw;
+}
+
+.btn-div {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 25vw;
+}

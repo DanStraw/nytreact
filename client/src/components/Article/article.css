@@ -1,0 +1,10 @@
+.article-div {
+    width: 60vw;
+    position: relative;
+    margin-top: 50px;
+    left: 20vw;
+    border: 2px black solid;
+    align-self: center;
+    text-align: center;
+    height: auto;
+}

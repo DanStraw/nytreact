@@ -1,0 +1,11 @@
+form {
+    width: 60vw;
+    position: relative;
+    top: 70px;
+    left: 20vw;
+    border: 4px darkolivegreen ridge;
+    justify-content: center;
+    height: 200px;
+    background-color: slategrey;
+}
+

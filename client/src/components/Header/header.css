@@ -1,0 +1,10 @@
+.page-head {
+    position: relative;
+    left: 12.5vw;
+    top: 5vh;
+    width: 75vw;
+    border: darkblue ridge 5px;
+    background-color: slateblue;
+    color: #495054;
+    text-align: center;
+}

@@ -5,13 +5,13 @@ module.exports = {
         db.Article.find({}).exec(cb)
     },
     create: function(req, res) {
-        db.Article
-            .create(req.body)
-            .then(dbModel => {
-                res.json(dbModel)})
+        db.Article.collection
+            .insert(req)
+            .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err))
     },
-    remove: function(res, res) {
+    remove: function(req, res) {
+        console.log(req.params)
         db.Article 
             .findById({ _id: req.params.id })
             .then(dbModel => dbModel.remove())

@@ -4,6 +4,7 @@ import API from "../../utils/API";
 import Article from '../../components/Article/Article.js';
 import SaveBtn from '../../components/SaveBtn/SaveBtn';
 import "../../components/Article/article.css";
+import { Link } from 'react-router-dom';
 
 class Results extends Component {
     state = {
@@ -51,6 +52,10 @@ class Results extends Component {
         return (
             <div>
                 <Header headerText="Search Results" />
+                <div className="navBar">
+                    <Link to="/"><div>Home</div></Link>
+                    <Link to="/saved">Saved</Link>
+                </div>
                 <div>
                     {this.state.articles.map((article, index)=> {
                         return (

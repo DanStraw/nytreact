@@ -6,6 +6,7 @@ import { Button } from '../../components/Form/Button.js';
 import { Link } from 'react-router-dom';
 
 
+
 class Search extends Component {
     state = {
         searchTerm: '',
@@ -27,6 +28,10 @@ class Search extends Component {
         return(
             <div>
                 <Header headerText="Search the New York Times API for Articles" />
+                    <div className="navBar">
+                        <Link to="/"><div>Home</div></Link>
+                        <Link to="/saved">Saved</Link>
+                    </div>
                 <form>
                     <Input value={this.state.searchTerm}
                         onChange={this.handleInputChange}

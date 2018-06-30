@@ -12,11 +12,10 @@ router
     })
   })
   .post("/api/articles",(req,res,next)=>{
-    console.log(req.body)
     articlesController.create(req.body)
   })
   .delete("/api/articles/:id", (req,res,next)=>{
-      articlesController.remove()
+      articlesController.remove(req)
   })
   .get("/nyt/:q", (req,res,next)=>{
     const queryArray = req.params.q.split("&")

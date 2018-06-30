@@ -5,7 +5,7 @@ const articleSchema = new Schema({
     title: { type: String, required: true },
     source: { type: String, required: true },
     url: { type: String, required: true },
-    summary: { type: String, required: true },
+    summary: { type: String },
     date: { type: String }
 })
 

@@ -21,7 +21,7 @@ router
     const queryArray = req.params.q.split("&")
     axios.get('https://api.nytimes.com/svc/search/v2/articlesearch.json', {
       params: {
-        "api-key": keys.nyt.api_key,
+        "api-key": "ca0429a513a34dde8fd6bde6ec1357e8",
         "q": queryArray[0],
         "begin_date": queryArray[1],
         "end_date": queryArray[2]

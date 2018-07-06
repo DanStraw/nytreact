@@ -3,6 +3,7 @@ const articlesController = require("../controllers/articlesController");
 const axios = require("axios");
 require('dotenv').config();
 const keys = require("../keys.js");
+const nytKey = keys.nyt.api_key
 
 router
   .get("/api/articles",(req,res,next)=>{
@@ -21,7 +22,7 @@ router
     const queryArray = req.params.q.split("&")
     axios.get('https://api.nytimes.com/svc/search/v2/articlesearch.json', {
       params: {
-        "api-key": keys.nyt.api_key,
+        "api-key": nytKey,
         "q": queryArray[0],
         "begin_date": queryArray[1],
         "end_date": queryArray[2]

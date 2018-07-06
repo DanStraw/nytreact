@@ -5,8 +5,6 @@ import "./search.css";
 import { Button } from '../../components/Form/Button.js';
 import { Link } from 'react-router-dom';
 
-
-
 class Search extends Component {
     state = {
         searchTerm: '',
